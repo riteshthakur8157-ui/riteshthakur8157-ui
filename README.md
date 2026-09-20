@@ -251,6 +251,27 @@ Developer Tools     █████████████████░░░
 
 ---
 
+## 🟩 My Contribution Activity
+
+<div align="center">
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/matrix-rain-v2-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/matrix-rain-v2-light.svg"
+  />
+  <img
+    width="100%"
+    alt="Animated Matrix Rain contribution graph"
+    src="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/matrix-rain-v2-dark.svg"
+  />
+</picture>
+
+</div>
 <div align="center">
 
 ### ✨ Thanks for visiting my profile!
