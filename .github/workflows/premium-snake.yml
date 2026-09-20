@@ -1,0 +1,49 @@
+name: Generate Premium Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Build light and dark snake animations
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Generate light theme SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: riteshthakur8157-ui
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=%23059669&color_dots=%23ebedf0,%23d1fae5,%236aefad,%2322c55e,%23059669
+
+      - name: Generate dark theme SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: riteshthakur8157-ui
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2322c55e&color_dots=%23161b22,%23064e3b,%230f766e,%2322c55e,%2386efac
+
+      - name: Generate green animated GIF
+        uses: Platane/snk@v3
+        with:
+          github_user_name: riteshthakur8157-ui
+          outputs: |
+            dist/github-contribution-grid-snake.gif?color_snake=%2322c55e&color_dots=%23161b22,%23064e3b,%230f766e,%2322c55e,%2386efac&color_background=%23090f0d
+
+      - name: Publish animation files
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Update premium contribution snake [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
