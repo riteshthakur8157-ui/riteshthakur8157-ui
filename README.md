@@ -192,12 +192,28 @@ print(me.mission())
 
 ## 🐍 Contribution Snake
 
+
+## 🐍 Contribution Snake
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake.svg" alt="Contribution snake animation">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake-dark.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake.svg"
+  />
+
+  <img
+    width="100%"
+    alt="GitHub Contribution Snake Animation"
+    src="https://raw.githubusercontent.com/riteshthakur8157-ui/riteshthakur8157-ui/output/github-snake.svg"
+  />
+
 </picture>
 
 </div>
